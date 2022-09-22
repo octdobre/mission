@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 12fr 1fr; /*individual*/
+            /*grid-template-columns: repeat(3, 1fr);*/ /*repeated*/
+            /*grid-template-columns: repeat(3, 1fr 2fr);*/ /*repeated and individual*/
+            grid-gap: 1em;
+            /*grid-auto-rows: 50px;*/
+            grid-auto-rows: minmax(50px, auto);
+        }
+
+            .wrapper > div {
+                background: #eee;
+                padding: 1em;
+            }
+
+                .wrapper > div:nth-child(odd) {
+                    background: #ddd;
+                }
+
+        .nested {
+            display: grid;
+            grid-template-columns: 1fr 12fr 1fr;
+            grid-auto-rows: 70px;
+            grid-gap: 1em;
+        }
+
+            .nested > div {
+                border: #333 1px solid;
+                padding: 1em;
+            }
+    </style>
+
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec convallis risus.
+            Morbi id luctus est. Aliquam condimentum justo ac ex posuere pharetra. Cras pulvinar
+            faucibus lorem sed aliquet. Proin consectetur malesuada elit, et semper diam efficitur a.
+            Vivamus dignissim magna ac arcu venenatis, vitae posuere purus dapibus.
+            Pellentesque eget enim eu velit semper mattis. Fusce aliquet, orci ut congue porttitor,
+            velit eros cursus nulla, ut consectetur ante turpis vitae mi. Maecenas dictum nibh ac risus suscipit,
+            sit amet consectetur enim lobortis. Nullam nulla leo, porta sed odio et, auctor iaculis purus.
+            Nulla facilisi. Etiam rutrum nibh non velit commodo, pellentesque malesuada libero vestibulum.
+            Praesent eu lacus iaculis, sodales felis eu, fermentum tellus.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec convallis risus.
+            Morbi id luctus est. Aliquam condimentum justo ac ex posuere pharetra. Cras pulvinar
+            faucibus lorem sed aliquet. Proin consectetur malesuada elit, et semper diam efficitur a.
+            Vivamus dignissim magna ac arcu venenatis, vitae posuere purus dapibus.
+            Pellentesque eget enim eu velit semper mattis. Fusce aliquet, orci ut congue porttitor,
+            velit eros cursus nulla, ut consectetur ante turpis vitae mi. Maecenas dictum nibh ac risus suscipit,
+            sit amet consectetur enim lobortis. Nullam nulla leo, porta sed odio et, auctor iaculis purus.
+            Nulla facilisi. Etiam rutrum nibh non velit commodo, pellentesque malesuada libero vestibulum.
+            Praesent eu lacus iaculis, sodales felis eu, fermentum tellus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec convallis risus.
+            Morbi id luctus est. Aliquam condimentum justo ac ex posuere pharetra. Cras pulvinar
+            faucibus lorem sed aliquet. Proin consectetur malesuada elit, et semper diam efficitur a.
+            Vivamus dignissim magna ac arcu venenatis, vitae posuere purus dapibus.
+            Pellentesque eget enim eu velit semper mattis. Fusce aliquet, orci ut congue porttitor,
+            velit eros cursus nulla, ut consectetur ante turpis vitae mi. Maecenas dictum nibh ac risus suscipit,
+            sit amet consectetur enim lobortis. Nullam nulla leo, porta sed odio et, auctor iaculis purus.
+            Nulla facilisi. Etiam rutrum nibh non velit commodo, pellentesque malesuada libero vestibulum.
+            Praesent eu lacus iaculis, sodales felis eu, fermentum tellus.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div class="nested">
+            <div>
+                Lorem ipsum dolor sit.
+            </div>
+            <div>
+                Lorem ipsum dolor sit.
+            </div>
+            <div>
+                Lorem ipsum dolor sit.
+            </div>
+            <div>
+                Lorem ipsum dolor sit.
+            </div>
+            <div>
+                Lorem ipsum dolor sit.
+            </div>
+            <div>
+                Lorem ipsum dolor sit.
+            </div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+    </div>
+</body>
+</html>

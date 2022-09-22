@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Grid Template Areas</title>
+</head>
+<body>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .basic-font {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        height: 100vh;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+                           'header header header'
+                           'nav content sidebar'
+                           'nav footer footer';
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 80px 1fr 80px;
+    }
+
+    .g-header,
+    .g-footer,
+    .g-main,
+    .g-nav,
+    .g-side {
+        background-color: steelblue;
+        color: #fff;
+        padding: 20px;
+        border: skyblue 1px solid;
+    }
+
+    .ga-header {
+        grid-area: header;
+    }
+
+    .ga-main {
+        grid-area: content;
+    }
+
+    .ga-nav {
+        grid-area: nav;
+    }
+
+    .ga-side {
+        grid-area: sidebar;
+    }
+
+    .ga-footer {
+        grid-area: footer;
+    }
+</style>
+
+
+<div class="container basic-font">
+    <div class="g-header ga-header">Header</div>
+    <div class="g-main ga-main">Main</div>
+    <div class="g-nav ga-nav">Navigation</div>
+    <div class="g-side ga-side">Sidebar</div>
+    <div class="g-footer ga-footer">Footer</div>
+</div>
+</body>
+</html>
