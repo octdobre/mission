@@ -1,0 +1,39 @@
+﻿.m-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'left-side content right-side'
+        'footer footer footer';
+    grid-template-columns: 80px 4fr 80px;
+    grid-template-rows: 1fr 4fr 30px;
+    /*grid-auto-rows: minmax(50px, auto);*/
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.m-element {
+    background-color: steelblue;
+    color: #fff;
+    border: skyblue 1px solid;
+}
+
+.m-header {
+    grid-area: header;
+}
+
+.m-content {
+    grid-area: content;
+}
+
+.m-left-side {
+    grid-area: left-side;
+}
+
+.m-right-side {
+    grid-area: right-side;
+}
+
+.m-mini-footer {
+    grid-area: footer;
+}

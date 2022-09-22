@@ -1,7 +1,15 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.basic-font {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 100vh;
 }
 
 h1:focus {
@@ -62,3 +70,7 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+/* Mission*/
+
+
